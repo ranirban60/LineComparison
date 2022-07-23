@@ -30,10 +30,14 @@ public static void main(String [] args){
     float d= (float) Math.sqrt(c);
     System.out.println("Length of the line = " +d);
 
-    if(b==d) {
+    if(Float.compare(b, d) == 0) {
         System.out.println("Lines are equal");
-    }else {
-        System.out.println("Lines are not equal");
+    }
+    else if (Float.compare(b, d) > 0) {
+        System.out.println("First line is grater than second line");
+    }
+    else {
+        System.out.println("Second line is grater than first line");
     }
 }
 }
