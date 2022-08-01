@@ -39,5 +39,8 @@ public static void main(String [] args){
     else {
         System.out.println("Second line is grater than first line");
     }
+    String s1 = Float.toString(b);
+    String s2 = Float.toString(d);
+    System.out.println(s1.compareTo(s2));
 }
 }
